@@ -11,6 +11,7 @@ public class ChessMatch {
 	
 private Board board;
 	
+
 	public ChessMatch() {
 		board = new Board(8, 8);
 		initialSetup();
@@ -52,7 +53,8 @@ private Board board;
 	}
 
 	private void initialSetup() {
-		     placeNewPiece('c', 1, new Rook(board, Color.WHITE));
+		
+		placeNewPiece('c', 1, new Rook(board, Color.WHITE));
         placeNewPiece('c', 2, new Rook(board, Color.WHITE));
         placeNewPiece('d', 2, new Rook(board, Color.WHITE));
         placeNewPiece('e', 2, new Rook(board, Color.WHITE));
